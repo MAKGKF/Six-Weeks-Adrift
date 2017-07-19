@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Six Weeks Adrift</title>
+			
+			<script>
+				function fromStart(){
+					var  intro = document.getElementById('openingDialog');
+					var path = document.referrer;
+					/*if(path == "Six Weeks Adrift.html"){
+						elem.style.display = 'block';
+					}*/
+					document.getElementById("test").innerHTML = intro;
+				}
+			</script>
+			<style>
+				#container{
+					width: 1000px;
+					height: 500px;
+					margin: 40px auto;
+				}
+				#choice {
+					width: 120px;
+					height: 25px;
+					border: 2px solid black;
+					background-color: lightgray;
+				}
+			</style>
+		</head>
+		<body>
+			
+			<div id="container">
+				<p id="test"></p>
+				<div class="mainImg"></div>
+				<div id="openingDialog" hidden onload="fromStart()">
+					<p>You gently stir awake to a familiar sight.</p>
+				</div>
+				<p>What would you like to do?</p>
+				<a id="choice" href="SWA_Bridge.html">explore further</a>
+				<button id="choice">look around</button>
+			</div>
+		
+			<div id="footer">
+			
+				<a href="Six Weeks Adrift.html">quit</a>
+			</div>
+		</body>
+	</html>
